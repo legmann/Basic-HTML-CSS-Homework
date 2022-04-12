@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.main-box {
+  display: block;
+  width: 1280px;
+  margin: auto;
+
+  font-family: 'Montserrat', sans-serif;
+
+  color: #373737;
+}
+
+/* Header */
+
+.header .header-menu {
+  margin: 26px 0 26px 0;
+  text-align: center;
+}
+
+.header-menu .menu-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header-menu .menu-item {
+  display: inline-block;
+  margin-right: 34px;
+
+  text-transform: uppercase;
+}
+
+.header-menu .menu-item:last-child {
+  margin: 0;
+}
+
+.header-menu .menu-link {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: 2.7px;
+  text-decoration: none;
+  color: #ff0000;
+}
+
+.header-menu .menu-link:hover {
+  color: #b22222;
+}
+
+/* Content */
+
+.main-box .content {
+  display: block;
+}
+
+.content .content-title {
+  margin: 0;
+  padding: 48px 0 38px 0;
+
+  text-transform: uppercase;
+  font-size: 22px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 3.3px;
+}
+
+.content .content-text {
+  display: inline-block;
+  margin: 0 0 28px 0;
+  padding: 0 68px 0 68px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.content .content-text:last-of-type {
+  margin: 0;
+}
+
+.content .content-button {
+  margin: 66px 0 42px 0;
+  text-align: center;
+}
+
+.content-button .button-body {
+  padding: 18px 44px;
+
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1;
+  letter-spacing: 1.8px;
+  background: #ff0000;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.content-button .button-body:hover {
+  background: #b22222;
+}
+
+/* Footer */
+
+.main-box .footer {
+  display: block;
+  margin: 40px 0 29px 0;
+}
+
+.footer .footer-copyright {
+  margin: 0;
+  padding-right: 106px;
+
+  text-align: right;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.21;
+  letter-spacing: 2.3px;
+}
