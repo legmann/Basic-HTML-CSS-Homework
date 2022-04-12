@@ -9,9 +9,7 @@ body {
   display: block;
   width: 1280px;
   margin: auto;
-
   font-family: 'Montserrat', sans-serif;
-
   color: #373737;
 }
 
@@ -31,7 +29,6 @@ body {
 .header-menu .menu-item {
   display: inline-block;
   margin-right: 34px;
-
   text-transform: uppercase;
 }
 
@@ -56,16 +53,16 @@ body {
 
 .main-box .content {
   display: block;
+  padding-bottom: 42px;
 }
 
 .content .content-title {
   margin: 0;
   padding: 48px 0 38px 0;
-
-  text-transform: uppercase;
   font-size: 22px;
-  line-height: 1.18;
   text-align: center;
+  text-transform: uppercase;
+  line-height: 1.18;
   letter-spacing: 3.3px;
 }
 
@@ -73,13 +70,12 @@ body {
   display: inline-block;
   margin: 0 0 28px 0;
   padding: 0 68px 0 68px;
-
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.6;
-  text-align: center;
   letter-spacing: 2px;
+  text-align: center;
 }
 
 .content .content-text:last-of-type {
@@ -87,20 +83,19 @@ body {
 }
 
 .content .content-button {
-  margin: 66px 0 42px 0;
+  margin-top: 66px;
   text-align: center;
 }
 
 .content-button .button-body {
   padding: 18px 44px;
-
-  text-transform: uppercase;
-  font-weight: 700;
   font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
   line-height: 1;
   letter-spacing: 1.8px;
-  background: #ff0000;
   color: #ffffff;
+  background: #ff0000;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -120,11 +115,10 @@ body {
 .footer .footer-copyright {
   margin: 0;
   padding-right: 106px;
-
-  text-align: right;
   font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
   font-size: 16px;
+  font-weight: 700;
+  text-align: right;
   line-height: 1.21;
   letter-spacing: 2.3px;
 }
