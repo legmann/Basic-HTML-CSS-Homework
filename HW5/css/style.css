@@ -3,11 +3,7 @@
 
 .wrapper {
   width: 100%;
-  background-color: #171717;
-  padding-bottom: 208px;
 }
-
-/* Global classes */
 
 .header,
 .networks-section .section-header,
@@ -18,7 +14,11 @@
 .clients-section .section-gallery {
   width: 1460px;
   margin: auto;
+  position: relative;
+  z-index: 3;
 }
+
+/* Global classes */
 
 .g-button {
   padding-top: 10px;
@@ -39,10 +39,6 @@
   box-sizing: border-item;
   background: none;
   color: #fff;
-}
-
-.g-section-header-bg {
-  background-color: #171717;
 }
 
 .g-section-title {
@@ -95,6 +91,17 @@
 
 /* Header */
 
+.header-networks-section-bg {
+  position: relative;
+  background-image: url(/img/bg/header-bg.jpeg);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.header-top-bg {
+  background: linear-gradient(to bottom, black 0%, transparent 100%);
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -139,9 +146,17 @@
 
 .networks-section {
   padding-bottom: 30px;
-  background-image: url(/img/bg/header-bg.jpeg);
-  background-attachment: fixed;
-  background-size: cover;
+}
+
+.networks-section:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2;
 }
 
 .networks-section .section-header {
@@ -170,11 +185,13 @@
   text-align: center;
   color: #fff;
   cursor: pointer;
-  box-sizing: border-box;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .networks-section .section-gallery .gallery-item:hover {
-  border: 2px solid #fff;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
 .networks-section .section-gallery .gallery-item:nth-child(4),
@@ -185,10 +202,22 @@
 /* Technics section */
 
 .technics-section {
+  position: relative;
   padding-bottom: 190px;
   background-image: url(/img/bg/parallax-bg.jpeg);
   background-attachment: fixed;
   background-size: cover;
+}
+
+.technics-section::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.95);
+  z-index: 2;
 }
 
 .technics-section .section-header {
@@ -231,13 +260,11 @@
   line-height: 1.25;
   color: #fff;
   cursor: pointer;
-  box-sizing: border-box;
-  border: 2px solid transparent;
-  box-sizing: border-box;
+  border-radius: 6px;
 }
 
 .technics-section .section-gallery .gallery-item:hover {
-  border: 2px solid #fff;
+  box-shadow: rgba(255, 255, 255, 0.438) 0px 5px 15px 0px;
 }
 
 .technics-section .section-gallery .gallery-item:last-child {
@@ -274,10 +301,22 @@
 /* Clients section */
 
 .clients-section {
+  position: relative;
+  padding-top: 160px;
   background-image: url(/img/bg/header-bg.jpeg);
   background-attachment: fixed;
   background-size: cover;
-  margin-top: 160px;
+}
+
+.clients-section::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.75);
+  z-index: 2;
 }
 
 .clients-section .section-header {
@@ -345,4 +384,12 @@
   font-family: 'Gilam', sans-serif;
   font-size: 20px;
   font-weight: normal;
+}
+
+/* Footer */
+
+.footer {
+  background-color: #171717;
+  opacity: 0.8;
+  padding-bottom: 208px;
 }
