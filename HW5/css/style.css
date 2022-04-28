@@ -45,7 +45,7 @@ body {
   color: #fff;
 }
 
-.g-section-title-bg {
+.g-section-header-bg {
   background-color: #171717;
 }
 
@@ -66,34 +66,34 @@ body {
   color: #ffffff;
 }
 
-.g-brown {
+.g-color-brown {
   background-color: #634f2c;
 }
-.g-bisque {
+.g-color-bisque {
   background-color: #b4a385;
 }
-.g-orange {
+.g-color-orange {
   background-color: #e4b564;
 }
-.g-gray {
+.g-color-gray {
   background-color: #635a4a;
 }
-.g-golden {
+.g-color-golden {
   background-color: #b08c4d;
 }
-.g-black {
+.g-color-black {
   background-color: #0e0e0e;
 }
-.g-coal {
+.g-color-coal {
   background-color: #1f1f1f;
 }
-.g-graphite {
+.g-color-graphite {
   background-color: #242424;
 }
-.g-obsidian {
+.g-color-obsidian {
   background-color: #0a0909;
 }
-.g-siver {
+.g-color-siver {
   background-color: rgba(232, 210, 171, 0.76);
 }
 
@@ -119,21 +119,21 @@ body {
   line-height: 1.45;
 }
 
-.header-contacts .header-phone .link {
+.header-contacts .header-phone .header-phone-link {
   text-decoration: none;
   color: #fff;
 }
 
-.header-contacts .header-phone .colored {
+.header-contacts .header-phone .header-phone-colored {
   color: #d6af76;
 }
 
-.header-contacts .button {
+.header-contacts .header-callback-button {
   padding-left: 26px;
   padding-right: 26px;
 }
 
-.header-contacts .phone-img {
+.header-contacts .callback-btn-img {
   height: 10px;
   width: 10px;
   margin-right: 10px;
@@ -160,7 +160,7 @@ body {
   margin-top: 30px;
 }
 
-.networks-section .section-gallery .item {
+.networks-section .section-gallery .gallery-item {
   display: grid;
   grid-column: auto / span 2;
   justify-content: center;
@@ -176,8 +176,8 @@ body {
   cursor: pointer;
 }
 
-.networks-section .section-gallery .item:nth-child(4),
-.networks-section .section-gallery .item:nth-child(5) {
+.networks-section .section-gallery .gallery-item:nth-child(4),
+.networks-section .section-gallery .gallery-item:nth-child(5) {
   grid-column: span 3;
 }
 
@@ -195,15 +195,15 @@ body {
   padding-bottom: 64px;
 }
 
-.technics-section .section-gallery .title {
+.technics-section .section-gallery .gallery-item-title {
   padding: 56px 0 0 52px;
 }
 
-.technics-section .section-gallery .subtitle {
+.technics-section .section-gallery .gallery-item-subtitle {
   font-weight: 700;
 }
 
-.technics-section .section-gallery .colored {
+.technics-section .section-gallery .gallery-item-title-colored {
   font-weight: 500;
   color: #000000;
 }
@@ -223,7 +223,7 @@ body {
   margin-right: 30px;
 }
 
-.technics-section .section-gallery .item {
+.technics-section .section-gallery .gallery-item {
   margin-bottom: 30px;
   text-align: left;
   font-family: 'Gilam', sans-serif;
@@ -234,34 +234,34 @@ body {
   cursor: pointer;
 }
 
-.technics-section .section-gallery .item:last-child {
+.technics-section .section-gallery .gallery-item:last-child {
   margin-bottom: 0;
 }
 
-.technics-section .section-gallery .item-1 {
+.technics-section .section-gallery .gallery-item-1 {
   min-height: 313px;
 }
-.technics-section .section-gallery .item-2 {
+.technics-section .section-gallery .gallery-item-2 {
   min-height: 560px;
 }
-.technics-section .section-gallery .item-3 {
+.technics-section .section-gallery .gallery-item-3 {
   min-height: 439px;
 }
-.technics-section .section-gallery .item-4 {
+.technics-section .section-gallery .gallery-item-4 {
   min-height: 405px;
 }
-.technics-section .section-gallery .item-5 {
+.technics-section .section-gallery .gallery-item-5 {
   min-height: 255px;
 }
-.technics-section .section-gallery .item-6 {
+.technics-section .section-gallery .gallery-item-6 {
   min-height: 313px;
 }
-.technics-section .section-gallery .item-7 {
+.technics-section .section-gallery .gallery-item-7 {
   min-height: 277px;
 }
 
-.technics-section .section-gallery .item-1,
-.technics-section .section-gallery .item-3 {
+.technics-section .section-gallery .gallery-item-1,
+.technics-section .section-gallery .gallery-item-3 {
   font-weight: 300;
 }
 
@@ -281,7 +281,7 @@ body {
   padding-bottom: 30px;
 }
 
-.clients-section .section-header .button {
+.clients-section .section-header .projects-button {
   padding-left: 40px;
   padding-right: 40px;
 }
@@ -293,7 +293,7 @@ body {
   padding-bottom: 30px;
 }
 
-.clients-section .section-gallery .item {
+.clients-section .section-gallery .gallery-item {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -301,7 +301,7 @@ body {
   cursor: pointer;
 }
 
-.clients-section .section-gallery .item-content {
+.clients-section .section-gallery .gallery-item-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -310,11 +310,11 @@ body {
   padding-right: 80px;
 }
 
-.clients-section .section-gallery .item-content .img {
+.clients-section .section-gallery .gallery-item-content .gallery-item-logo {
   margin-bottom: 16px;
 }
 
-.clients-section .section-gallery .item-content .item-txt {
+.clients-section .section-gallery .gallery-item-content .gallery-item-title {
   font-family: 'Gilam', sans-serif;
   font-size: 20px;
   font-weight: 600;
@@ -325,7 +325,11 @@ body {
   color: #ffffff;
 }
 
-.clients-section .section-gallery .item-content .item-txt .subtitle {
+.clients-section
+  .section-gallery
+  .gallery-item-content
+  .gallery-item-title
+  .gallery-item-subtitle {
   font-family: 'Gilam', sans-serif;
   font-size: 20px;
   font-weight: normal;
