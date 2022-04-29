@@ -134,6 +134,7 @@
 .header-contacts .header-callback-button {
   padding-left: 26px;
   padding-right: 26px;
+  text-decoration: none;
 }
 
 .header-contacts .callback-btn-img {
