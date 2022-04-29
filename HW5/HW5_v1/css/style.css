@@ -93,7 +93,7 @@
 
 .header-networks-section-bg {
   position: relative;
-  background-image: url(/img/bg/header-bg.jpeg);
+  background-image: url(../img/bg/header-bg.jpeg);
   background-attachment: fixed;
   background-size: cover;
 }
@@ -204,7 +204,7 @@
 .technics-section {
   position: relative;
   padding-bottom: 190px;
-  background-image: url(/img/bg/parallax-bg.jpeg);
+  background-image: url(../img/bg/parallax-bg.jpeg);
   background-attachment: fixed;
   background-size: cover;
 }
@@ -303,7 +303,7 @@
 .clients-section {
   position: relative;
   padding-top: 160px;
-  background-image: url(/img/bg/header-bg.jpeg);
+  background-image: url(../img/bg/header-bg.jpeg);
   background-attachment: fixed;
   background-size: cover;
 }
