@@ -18,6 +18,36 @@
   width: 1020px;
 }
 
+.header .logo-text,
+.header .contacts .link,
+.gallery .item .item-img-link,
+.gallery .item .item-txt-link,
+.item .image-description .prise-box,
+.footer .copyright {
+  color: #fff;
+}
+
+.header .contacts .link:hover,
+.header .logo:hover .logo-text,
+.gallery .item:hover .item-txt-link {
+  color: #f26522;
+}
+
+.header .contacts .link,
+.gallery .item .item-txt-link,
+.item .image-description .prise-box .text,
+.item .image-description .details,
+.footer .copyright {
+  font-weight: 400;
+}
+
+.header .logo-link,
+.header .contacts .link,
+.gallery .item .item-img-link,
+.gallery .item .item-txt-link {
+  text-decoration: none;
+}
+
 /* Header */
 
 .content .header {
@@ -34,10 +64,6 @@
   background-image: url(../img/logo-hover.png);
 }
 
-.header .logo:hover .logo-text {
-  color: #f26522;
-}
-
 .header .logo .logo-img {
   width: 53px;
   height: 47px;
@@ -48,10 +74,9 @@
 .header .logo-text {
   display: flex;
   flex-direction: column;
-  color: #fff;
-  text-transform: uppercase;
-  font-weight: 700;
   margin-top: 3px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .header .logo-text .logo-text-big {
@@ -64,10 +89,6 @@
   line-height: 1;
 }
 
-.header .logo-link {
-  text-decoration: none;
-}
-
 .header .contacts {
   display: flex;
   flex-direction: column;
@@ -75,59 +96,42 @@
 }
 
 .header .contacts .link {
-  display: inline-block;
-  color: #fff;
-  text-decoration: none;
-  font-weight: 400;
-  font-size: 18px;
   line-height: 1;
-  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
 }
 
 .header .contacts .link:first-child {
   margin-bottom: 20px;
 }
 
-.header .contacts .link:hover {
-  color: #f26522;
-}
-
-/* Gallery */
+/* Main */
 
 .content .gallery {
   display: grid;
-  justify-content: center;
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 60px;
   grid-row-gap: 78px;
+  justify-content: center;
   margin-top: 17px;
 }
 
 .gallery .item {
-  text-align: center;
-  width: 300px;
-  height: 220px;
   position: relative;
-  flex-direction: column;
-  box-sizing: border-box;
-  /* opacity: 0.3; */
-  /* overflow: hidden; */
+  text-align: center;
 }
 
-.gallery .item .transition-box {
-  width: 300px;
-  height: 220px;
+.gallery .item .hover-img-container {
   position: relative;
   overflow: hidden;
 }
 
-.gallery .item .image {
-  width: 100%;
-  height: 100%;
+.gallery .item .image-box {
+  overflow: hidden;
+  width: 300px;
+  height: 220px;
   box-sizing: border-box;
   border: 6px solid #fff;
   border-image: linear-gradient(#fff, #000) 6;
-  overflow: hidden;
 }
 
 .gallery .item:hover .image-description {
@@ -136,44 +140,28 @@
 }
 
 .gallery .item .image-description {
-  display: flex;
-  align-items: end;
   position: absolute;
-  background-color: #f26522;
-  flex-shrink: 0;
-  justify-content: space-between;
-  padding-left: 12px;
-  padding-bottom: 12px;
-  padding-top: 7px;
-  padding-right: 14px;
+  top: 100%;
   left: 0;
   right: 0;
-  top: 100%;
-  transition: all 0.4s ease-out;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
   margin: 0 6px;
-}
-
-.gallery .item .item-img-link {
-  color: #fff;
-  text-decoration: none;
+  padding: 7px 14px 12px 12px;
+  background-color: #f26522;
+  transition: all 0.3s ease-out;
 }
 
 .gallery .item .item-txt-link {
   position: absolute;
-  margin-bottom: -32px;
-  bottom: 0;
   left: 0;
   right: 0;
-  color: #fff;
-  text-decoration: none;
-  font-weight: 400;
+  bottom: 0;
+  margin-bottom: -32px;
+  font-family: 'Roboto', sans-serif;
   font-size: 18px;
   line-height: 1;
-  font-family: 'Roboto', sans-serif;
-}
-
-.gallery .item:hover .item-txt-link {
-  color: #f26522;
 }
 
 .item .image-description .prise-box {
@@ -184,16 +172,12 @@
 
 .item .image-description .prise-box .text {
   margin-bottom: 8px;
-  font-weight: 400;
   font-size: 10px;
   line-height: 1;
-  color: #ffffff;
 }
 
 .item .image-description .details {
-  font-weight: 400;
   font-size: 14px;
-  color: #ffffff;
 }
 
 .image-description .details::after {
@@ -201,30 +185,14 @@
   margin-left: 16px;
 }
 
-/* .image-text:hover::after {
-  content: '';
-  position: absolute;
-  height: 50px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 20;
-
-  display: inline-block;
-  color: #fff;
-} */
-
 /* Footer */
 
 .footer {
+  margin: 90px 0 15px 0;
   text-align: center;
-  margin-top: 90px;
-  margin-bottom: 15px;
 }
 
 .footer .copyright {
-  font-weight: 400;
   font-size: 12px;
   line-height: 1;
-  color: #fff;
 }

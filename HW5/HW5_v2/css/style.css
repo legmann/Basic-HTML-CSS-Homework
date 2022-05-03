@@ -248,11 +248,6 @@
   font-weight: 700;
 }
 
-.technics-section .section-gallery .gallery-item-title-colored {
-  font-weight: 500;
-  color: #000000;
-}
-
 .technics-section .section-gallery {
   display: flex;
   flex-direction: row;
@@ -303,6 +298,8 @@
 
 .technics-section .section-gallery .gallery-item-4 {
   min-height: 405px;
+  color: #000;
+  font-weight: 500;
 }
 
 .technics-section .section-gallery .gallery-item-5 {
