@@ -375,7 +375,6 @@
   font-size: 20px;
   font-weight: 600;
   font-size: 22px;
-  font-style: normal;
   line-height: 1.27;
   text-align: center;
   color: #ffffff;
@@ -388,7 +387,6 @@
 .gallery-item-subtitle {
   font-family: 'Gilam', sans-serif;
   font-size: 20px;
-  font-weight: normal;
 }
 
 /* Footer */
