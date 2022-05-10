@@ -248,6 +248,7 @@ svg path {
   font-size: 14px;
   line-height: 1;
   color: #434343;
+  cursor: pointer;
 }
 
 .sign-up-form .checkbox-box .label > input {
