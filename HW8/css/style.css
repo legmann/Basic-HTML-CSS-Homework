@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap');
+
+body {
+  background: #111;
+  perspective: 200px;
+  overflow: hidden;
+}
+
+.wrapper {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px;
+  color: #f6cb00;
+  font-weight: bold;
+  width: 600px;
+  margin: 0 auto;
+  transform: rotateX(30deg);
+  animation: textAnimation 30s ease-in;
+  animation-iteration-count: infinite;
+}
+
+.wrapper .title,
+.wrapper .subtitle {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+@keyframes textAnimation {
+  0% {
+    transform: rotateX(30deg) translateY(400px);
+  }
+  100% {
+    transform: rotateX(30deg) translateY(-300px);
+  }
+}
