@@ -30,7 +30,7 @@ svg path {
 .header-content svg,
 .login-buttons svg {
   fill: #fff;
-  transition: 0.5s;
+  transition: fill 0.5s;
 }
 
 .header-button svg:hover {
@@ -40,7 +40,7 @@ svg path {
 .g-link {
   text-decoration: none;
   color: #fff;
-  transition: 0.5s;
+  transition: color 0.5s;
 }
 
 .g-link:hover {
@@ -57,7 +57,7 @@ svg path {
 /* Header */
 
 .header {
-  background: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.4);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -105,7 +105,7 @@ svg path {
   width: 444px;
   margin: 0 auto;
   padding: 30px 60px 38px 60px;
-  background: #fff;
+  background-color: #fff;
   box-sizing: border-box;
   transform: translate(-50%, -50%);
 }
@@ -116,7 +116,7 @@ svg path {
   top: 32px;
   width: 18px;
   height: 18px;
-  background: #3cb878;
+  background-color: #3cb878;
 }
 
 .content .sign-up-conteiner {
@@ -143,7 +143,7 @@ svg path {
   line-height: 1;
   color: #3cb878;
   text-decoration: none;
-  transition: 0.5s;
+  transition: color 0.5s;
 }
 
 .sign-up-conteiner .form-header .form-login-link:hover,
@@ -164,13 +164,13 @@ svg path {
   display: flex;
   align-items: center;
   padding: 10px 22px 10px 16px;
-  background: #305db8;
+  background-color: #305db8;
   border-radius: 3px;
-  transition: 0.5s;
+  transition: background-color 0.5s;
 }
 
 .login-buttons .facebook-button:hover {
-  background: #022263;
+  background-color: #022263;
 }
 
 .facebook-button .button-line {
@@ -181,13 +181,13 @@ svg path {
   display: flex;
   align-items: center;
   padding: 10px 27px 10px 12px;
-  background: #df4a32;
+  background-color: #df4a32;
   border-radius: 3px;
-  transition: 0.5s;
+  transition: background-color 0.5s;
 }
 
 .login-buttons .google-button:hover {
-  background: #ab1f09;
+  background-color: #ab1f09;
 }
 
 .google-button .button-line {
@@ -297,7 +297,7 @@ svg path {
   cursor: pointer;
   font-size: 16px;
   line-height: 1;
-  transition: 0.5s;
+  transition: background-color 0.5s;
 }
 
 .sign-up-conteiner .sign-up-form .button:hover {
