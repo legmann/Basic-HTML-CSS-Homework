@@ -1,28 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap');
 
-body {
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
   background-color: #3a4965;
 }
 
-.table-box {
-  background-color: #fff;
+.wrapper .table-box {
   width: 1156px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  box-sizing: border-box;
-  transform: translate(-50%, -50%);
+  background-color: #eeeeee;
 }
 
 .table-box .table {
   width: 100%;
+  text-align: center;
+  vertical-align: middle;
   border-collapse: collapse;
   font-family: 'Arimo', sans-serif;
   border-spacing: 0;
-  text-align: center;
-  vertical-align: middle;
-  color: #484848;
   text-transform: uppercase;
+  color: #484848;
 }
 
 .table-box .table .col-1 {
@@ -96,19 +96,19 @@ body {
   border-right: 1px solid #20807c;
 }
 
-.price-box {
+.table-header .price-box {
   position: relative;
   width: 280px;
   height: 89px;
 }
-.first-price {
+.price-box .first-price {
   position: absolute;
   bottom: 10px;
   left: 33px;
   font-weight: 700;
   font-size: 60px;
 }
-.second-price {
+.price-box .second-price {
   position: absolute;
   top: 12px;
   right: 115px;
@@ -116,7 +116,7 @@ body {
   font-size: 24px;
 }
 
-.price-text {
+.price-box .price-text {
   position: absolute;
   top: 37px;
   right: 35px;
@@ -125,59 +125,60 @@ body {
 }
 
 .table .item {
-  vertical-align: middle;
   padding-top: 22px;
   padding-bottom: 22px;
+  vertical-align: middle;
 }
 
 .table .item i {
+  font-size: 24px;
   color: #848484;
 }
 
-.main tr:nth-child(odd) {
+.table .main tr:nth-child(odd) {
   background: #f2f2f2;
 }
-.main tr:nth-child(even) {
+.table .main tr:nth-child(even) {
   background: #e3e3e3;
 }
 
-.first-footer-box {
+.table .first-footer-box {
   background-color: #ddd;
 }
 
-.footer .button {
+.table .footer .button {
   position: relative;
   display: inline-block;
+  margin: 30px 0;
+  padding: 20px 0 8px 0;
+  width: 196px;
   border-radius: 5px 5px;
   border: none;
-  width: 196px;
-  padding: 20px 0 8px 0;
   font-weight: 700;
   font-size: 16px;
   line-height: 1;
   color: #fff;
   text-transform: uppercase;
   cursor: pointer;
-  margin: 30px 0;
   transition: background-color 0.5s;
 }
 
-.footer .btn-1 {
+.table .footer .btn-1 {
   background-color: #484848;
   border-bottom: 9px solid #404040;
 }
 
-.footer .btn-2 {
+.table .footer .btn-2 {
   background-color: #89c331;
   border-bottom: 9px solid #79b027;
 }
 
-.footer .btn-3 {
+.table .footer .btn-3 {
   background-color: #f04a56;
   border-bottom: 9px solid #df3a46;
 }
 
-.footer .btn-4 {
+.table .footer .btn-4 {
   background-color: #20807c;
   border-bottom: 9px solid #16736f;
 }
