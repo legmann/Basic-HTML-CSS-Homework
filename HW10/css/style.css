@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+@import url('https:////db.onlinewebfonts.com/c/6e090c73689d12b9747bf7e986f64587?family=FuturaBTW02-Bold');
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  background-color: #fff;
+  color: #424f57;
+}
+
+.wrapper .content,
+.wrapper .header-section {
+  width: 1404px;
+}
+
+.g-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 0.67;
+  text-transform: uppercase;
+  color: #14afca;
+}
+
+.g-subtitle {
+  display: inline-block;
+  margin-top: 40px;
+  margin-bottom: 55px;
+  font-family: 'Open Sans', sans-serif;
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 0.67;
+}
+
+/* Header */
+
+.header-section {
+  position: relative;
+  height: 596px;
+  background-image: url(../img/bg1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header-section::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.8;
+  z-index: 1;
+}
+
+.header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 25px;
+  padding: 40px 174px 40px 202px;
+  background-color: #fff;
+  z-index: 2;
+}
+
+.header .logo-link {
+  text-decoration: none;
+}
+
+.header .logo .logo-text {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 36px;
+  line-height: 1;
+  color: #424f57;
+}
+
+.header .logo .colored {
+  font-weight: 700;
+  color: #14afca;
+  text-transform: uppercase;
+}
+
+.top-menu .menu .menu-item {
+  display: inline-block;
+  margin-right: 70px;
+}
+
+.top-menu .menu .menu-item:last-of-type {
+  margin: 0;
+}
+
+.top-menu .menu .menu-item .item-link {
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 1.33;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+  color: #3e4c4e;
+}
+
+.top-menu .menu .menu-item .item-link:hover {
+  color: #14afca;
+}
+
+.header-section-title {
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.header-section-title :after {
+  content: '';
+  position: absolute;
+  top: 93%;
+  left: 0;
+  right: 0;
+  margin-left: -1px;
+  margin-right: -1px;
+  padding-bottom: 12%;
+  background-color: #fff;
+  clip-path: polygon(50% 98%, 100% 40%, 100% 100%, 0 100%, 0% 40%);
+}
+
+.header-section-title .title {
+  font-family: 'FuturaBTW02-Bold', sans-serif;
+  text-transform: uppercase;
+  font-size: 52px;
+  line-height: 1.44;
+  color: #fff;
+  z-index: 2;
+  text-align: center;
+}
+
+/* Section What */
+
+.main-content .section-what {
+  display: flex;
+  flex-direction: column;
+  padding-top: 122px;
+  text-align: center;
+}
+
+.section-what .section-text {
+  padding: 0 194px 90px 194px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+}
+
+/* Section companies */
+
+.main-content .section-companies {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 88px;
+  margin-bottom: 180px;
+  background-image: url(../img/bg2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section-companies::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.9;
+  z-index: 1;
+}
+
+.section-companies .title {
+  margin-top: 150px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 1.25;
+  text-align: center;
+  color: #14afca;
+  text-transform: uppercase;
+  z-index: 2;
+}
+
+.section-companies .title:after {
+  content: '';
+  position: absolute;
+  top: 0%;
+  left: 0;
+  right: 0;
+  margin: -1px;
+  padding-bottom: 12%;
+  background-color: #fff;
+  clip-path: polygon(50% 63%, 0 0, 100% 0);
+}
+
+.section-companies .subtitle {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 4.17;
+  letter-spacing: 2px;
+  color: #fff;
+  z-index: 2;
+}
+
+.section-companies .gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  row-gap: 154px;
+  column-gap: 56px;
+  margin-top: 50px;
+  z-index: 2;
+}
+
+/* Section meet us */
+
+.main-content .section-meet-us {
+  text-align: center;
+}
+
+.section-meet-us .people-gallary {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 15px;
+  column-gap: 58px;
+  margin-top: 30px;
+  margin-bottom: 128px;
+  padding-left: 180px;
+  padding-right: 180px;
+}
+
+.section-meet-us .gallary-desc {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.87;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* Section testimonials */
+
+.main-content .section-testimonials {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-image: url(../img/bg3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-content .section-testimonials::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.9;
+  z-index: 1;
+}
+
+.section-testimonials .title {
+  margin-top: 190px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 1.25;
+  text-align: center;
+  color: #14afca;
+  text-transform: uppercase;
+  z-index: 2;
+}
+
+.section-testimonials .title:after {
+  content: '';
+  position: absolute;
+  top: 0%;
+  left: 0;
+  right: 0;
+  margin: -1px;
+  padding-bottom: 12%;
+  background-color: #fff;
+  clip-path: polygon(50% 63%, 0 0, 100% 0);
+}
+
+.section-testimonials .subtitle {
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 4.17;
+  letter-spacing: 2px;
+  text-align: center;
+  color: #fff;
+  z-index: 2;
+}
+
+.section-testimonials .subtitle:after {
+  content: '';
+  position: absolute;
+  top: 425px;
+  left: 0;
+  right: 0;
+  margin-left: -1px;
+  margin-right: -1px;
+  padding-bottom: 12%;
+  background-color: #fff;
+  clip-path: polygon(50% 98%, 100% 40%, 100% 100%, 0 100%, 0% 40%);
+  z-index: 2;
+}
+
+.section-testimonials .testimonials-text {
+  padding-left: 200px;
+  padding-right: 200px;
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 1.75;
+  letter-spacing: 0.8px;
+  text-align: center;
+  color: #d3cccc;
+  z-index: 2;
+}
+
+.section-testimonials .text-autor {
+  display: inline-block;
+  margin-top: 28px;
+  padding-bottom: 143px;
+  padding-right: 337px;
+  text-align: right;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-style: italic;
+  line-height: 1.33;
+  letter-spacing: 0.45px;
+  color: #fff;
+  z-index: 2;
+}
+
+/* Section why */
+
+.main-content .section-why {
+  margin-top: 115px;
+  text-align: center;
+}
+
+.main-content .text {
+  display: inline-block;
+  padding-bottom: 96px;
+  padding-left: 296px;
+  padding-right: 296px;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.6;
+  letter-spacing: 0.75px;
+}
+
+/* Footer */
+
+.footer {
+  margin-bottom: 88px;
+  padding: 0 492px;
+  text-align: center;
+}
+
+.footer .copy {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.7px;
+  color: #3d3c3c;
+}
+
+.footer .copy .colored {
+  font-weight: bold;
+}
