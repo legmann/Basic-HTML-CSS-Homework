@@ -99,7 +99,7 @@ svg path {
 
 .content {
   position: absolute;
-  top: calc(50% + 58px);
+  top: 54.5%;
   left: 50%;
   display: flex;
   width: 444px;
